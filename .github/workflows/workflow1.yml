@@ -13,4 +13,4 @@ jobs:
           name: id_ed25519
           known_hosts: ${{ secrets.SSH_HOST }}
       - name: Pull
-        run: ssh lucasbastos@10.0.100.141 "mkdir /home/lucasbastos/diretorio2"
+        run: ssh lucasbastos@10.0.100.141 "cd /home/lucasbastos/diretorio2 && /usr/bin/git clone https://github.com/zsurbanismo/projeto1c-zs2.git"
