@@ -4,6 +4,8 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
+      - name: Print início
+        run: echo "início do deploy"
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
